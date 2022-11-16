@@ -1,0 +1,97 @@
+@import "colors";
+
+iframe {
+  border: none;
+  text-align: center;
+  align-items: center;
+  padding: 3rem;
+  display: block;
+  width: 1000px;
+  height: 400px;
+  margin: auto 20%;
+}
+.contact{
+  width: 100%;
+  height: 100vh;
+  background-color: $second;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  >main{
+    background-color: $first;
+    height: 40rem;
+    width: 70%;
+    padding: 3rem;
+    border-radius: 0 200px 200px 0;
+
+    >form{
+      margin: 5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      >div{
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 60%;
+        margin: 0.5rem;
+
+        >label{
+          font: 400 1.2rem $text1;
+          width: 30%;
+          margin: 0 1rem;
+          font-weight: bold;
+          font-size: 30px;
+        }
+        >input{
+          align-self: stretch;
+          width: 80%;
+          padding: 1rem;
+          border-radius: 5px;
+          border: 1px solid orangered;
+          outline: none;
+        }
+        >input::placeholder{
+          font-size: larger;
+          text-align: center;
+          font-weight: 700;
+        }
+        >textarea{
+          align-self: stretch;
+          width: 80%;
+          resize: none;
+          padding: 1rem;
+          border-radius: 5px;
+          border: 1px solid orangered;
+          outline: none;
+        }
+        >textarea::placeholder{
+          font-size: larger;
+          text-align: center;
+          font-weight: 700;
+        }
+      }
+      >button{
+        padding: 10px 80px;
+        margin: 20px;
+        font-size: 20px;
+        font-weight: bold;
+        border: none;
+        background-color: $second;
+        color: $first;
+        letter-spacing: 0.5rem;
+        border-radius: 5px;
+        transition: all ease 0.5s;
+        cursor: pointer;
+        &:hover{
+          font-size: 30px;
+          background-color: white;
+          color: black;
+          border: 2px solid orangered;
+        }
+      }
+    }
+  }
+}
